@@ -51,9 +51,9 @@ class ReqDb:
                 return True
         return False
     
-    def import_csv(self):
+    def import_csv(self, file):
         print('TODO: import_csv')
-        file = open(self.dbName, 'r')
+        file = open(file, 'r')
         lines = file.readlines()  
         file.close()
         for line in lines:

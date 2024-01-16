@@ -4,6 +4,7 @@ from tkinter import ttk
 import tkinter as tk
 from tkinter import messagebox
 from ReqDb import ReqDb
+from tkinter import filedialog
 
 class ReqGuiCtk(customtkinter.CTk):
 
@@ -298,9 +299,10 @@ class ReqGuiCtk(customtkinter.CTk):
         messagebox.showinfo('Success', f'Data exported to {self.db.dbName}')
     
     def import_from_csv(self):
-        self.db.import_csv()
+        filepath = filedialog.askopenfilename(filetypes=[('csv files', '*.csv')])
+        self.db.import_csv(filepath)
         self.add_to_treeview()
-        messagebox.showinfo('Success', f'Data imported from {self.db.dbName}')
+        messagebox.showinfo('Success', 'Data has been imported')
     
     def export_to_json(self):
         self.db.export_json()

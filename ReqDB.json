@@ -11,7 +11,7 @@
         "description": "Finals",
         "subject": "Physics 71",
         "priority": "High",
-        "status": "Done"
+        "status": "Pending"
     },
     {
         "id": "3",
@@ -25,7 +25,7 @@
         "description": "Design Project",
         "subject": "EEE 118",
         "priority": "High",
-        "status": "Done"
+        "status": "Pending"
     },
     {
         "id": "5",
